@@ -1,11 +1,30 @@
-import { Nav, NavLink, NavItem, Navbar } from "reactstrap";
+import {
+  Nav,
+  NavLink,
+  NavItem,
+  Navbar,
+  NavbarBrand,
+  NavbarToggler,
+  Collapse,
+  UncontrolledDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem,
+  NavbarText,
+  Button,
+} from "reactstrap";
 import Link from "next/link";
 
 const NavButton = ({ href, path, _target, children, ...props }) => {
   let active = href === path;
+  console.log(href, path)
   return (
-    <Link href={href} color={active ? "#ef233c" : "#edf2f4"}>
-      <NavItem>{children}</NavItem>
+    <Link href={href}>
+      <Button color={active ? "success" : ""}>
+        <NavItem>
+          <NavLink href={href}>{children}</NavLink>
+        </NavItem>
+      </Button>
     </Link>
   );
 };
@@ -13,23 +32,37 @@ const NavButton = ({ href, path, _target, children, ...props }) => {
 const NavBar = (props) => {
   const { path } = props;
   return (
-    <Nav>
-      <NavButton href="/" path={path}>
-        Home
-      </NavButton>
+    <div>
+      <Navbar color="dark" expand="md" dark>
+        <Link href="/">
+          <NavbarBrand>DW</NavbarBrand>
+        </Link>
+        <NavbarToggler onClick={function noRefCheck() {}} />
+        <Collapse navbar>
+          <Nav className="me-auto" navbar>
+            <NavButton href="/about" path={path}>
+              About
+            </NavButton>
 
-      <NavButton href="/about" path={path}>
-        About
-      </NavButton>
-
-      <NavButton href="/works" path={path}>
-        Works
-      </NavButton>
-
-      <NavButton href="/sauce" path={path}>
-        Sauce
-      </NavButton>
-    </Nav>
+            <NavButton href="https://github.com/dwang" path={path}>
+              Github
+            </NavButton>
+            <UncontrolledDropdown inNavbar nav>
+              <DropdownToggle caret nav>
+                Options
+              </DropdownToggle>
+              <DropdownMenu right>
+                <DropdownItem>Option 1</DropdownItem>
+                <DropdownItem>Option 2</DropdownItem>
+                <DropdownItem divider />
+                <DropdownItem>Reset</DropdownItem>
+              </DropdownMenu>
+            </UncontrolledDropdown>
+          </Nav>
+          <NavbarText>Simple Text</NavbarText>
+        </Collapse>
+      </Navbar>
+    </div>
   );
 };
 
