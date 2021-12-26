@@ -1,29 +1,13 @@
-import {
-  Nav,
-  NavLink,
-  NavItem,
-  Navbar,
-  NavbarBrand,
-  NavbarToggler,
-  Collapse,
-  UncontrolledDropdown,
-  DropdownToggle,
-  DropdownMenu,
-  DropdownItem,
-  NavbarText,
-  Button,
-} from "reactstrap";
+import { Box, Button, HStack } from "@chakra-ui/react";
 import Link from "next/link";
+import { FaCat } from "react-icons/fa";
 
 const NavButton = ({ href, path, _target, children, ...props }) => {
   let active = href === path;
-  console.log(href, path)
   return (
-    <Link href={href}>
-      <Button color={active ? "success" : ""}>
-        <NavItem>
-          <NavLink href={href}>{children}</NavLink>
-        </NavItem>
+    <Link href={href} _target={_target}>
+      <Button {...props} bgColor={href==="/"?"transparent":active ? "#f5cb5c" : "#333533"}>
+        {children}
       </Button>
     </Link>
   );
@@ -32,37 +16,21 @@ const NavButton = ({ href, path, _target, children, ...props }) => {
 const NavBar = (props) => {
   const { path } = props;
   return (
-    <div>
-      <Navbar color="dark" expand="md" dark>
-        <Link href="/">
-          <NavbarBrand>DW</NavbarBrand>
-        </Link>
-        <NavbarToggler onClick={function noRefCheck() {}} />
-        <Collapse navbar>
-          <Nav className="me-auto" navbar>
-            <NavButton href="/about" path={path}>
-              About
-            </NavButton>
-
-            <NavButton href="https://github.com/dwang" path={path}>
-              Github
-            </NavButton>
-            <UncontrolledDropdown inNavbar nav>
-              <DropdownToggle caret nav>
-                Options
-              </DropdownToggle>
-              <DropdownMenu right>
-                <DropdownItem>Option 1</DropdownItem>
-                <DropdownItem>Option 2</DropdownItem>
-                <DropdownItem divider />
-                <DropdownItem>Reset</DropdownItem>
-              </DropdownMenu>
-            </UncontrolledDropdown>
-          </Nav>
-          <NavbarText>Simple Text</NavbarText>
-        </Collapse>
-      </Navbar>
-    </div>
+    <HStack mt={"40px"} mb={"40px" }w={"70%"}>
+      <NavButton href="/" path={path} fontSize={"30px"}>
+        Dennis Wang &#160;
+        <FaCat />
+      </NavButton>
+      <NavButton href="/about" path={path}>
+        About
+      </NavButton>
+      <NavButton href="/works" path={path}>
+        Works
+      </NavButton>
+      <NavButton href="/sauce" path={path}>
+        Sauce
+      </NavButton>
+    </HStack>
   );
 };
 

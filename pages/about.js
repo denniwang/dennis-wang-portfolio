@@ -1,6 +1,18 @@
+import AnimeDiv from '../components/animatedSection'
 export default function Page({ }) {
+
   return (
-    <main>
-    </main>
+    <AnimeDiv >
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </AnimeDiv>
   )
 }
