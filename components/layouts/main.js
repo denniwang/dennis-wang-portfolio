@@ -15,7 +15,7 @@ export default function Main({ children, router }) {
         <meta name="description" content="Dennis Wang - portfolio" />
         <meta name="author" content="Dennis Wang" />
         <link rel="shortcut icon" href="/cat.png" type="image/x-icon" />
-        <meta property="og:site_name" content="Dennis Want - portfolio" />
+        <meta property="og:site_name" content="Dennis Wang" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/cat.png" />
         <title>Dennis Wang - portfolio</title>
