@@ -9,6 +9,7 @@ import {
   HStack,
   Image,
   Text,
+  textDecoration,
   VStack,
 } from "@chakra-ui/react";
 import Link from "next/link";
@@ -25,7 +26,8 @@ import Timeslot from "../components/timeslot";
 export default function Home() {
   return (
     <>
-      <AnimatedSection 
+
+      <AnimatedSection
         style={{ backgroundColor: "transparent", color: "#e8eddf" }}
         delay={0}
       >
@@ -135,17 +137,25 @@ export default function Home() {
               <FaHeart></FaHeart>
             </Text>
             <Text fontSize={"20"} textAlign={"right"}>
-              Tennis, exercise, graphic design, nonprofit work, leadership,
-              learning, reading, you
+              Tennis, exercise, graphic design,{" "}
+              <Link href={"https://www.laughouttogether.org"}>
+                nonprofit work
+              </Link>
+              , leadership, learning, reading, you
             </Text>
           </VStack>
         </Center>
 
         <Center
           width={{ base: "70%", xl: "80%" }}
-          style={{ marginTop: "50px", marginBottom:"100px"  }}
+          style={{ marginTop: "50px", marginBottom: "100px" }}
         >
-          <VStack align={"end"} justify={"center"} width={"100%"} fontSize={"20px"}>
+          <VStack
+            align={"end"}
+            justify={"center"}
+            width={"100%"}
+            fontSize={"20px"}
+          >
             <Text
               textDecoration={"underline 4px #f5cb5c"}
               className="miniheader"

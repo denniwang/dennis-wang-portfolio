@@ -1,6 +1,6 @@
-import { Box, Button, HStack } from "@chakra-ui/react";
+import { Box, Button, HStack, Spacer } from "@chakra-ui/react";
 import Link from "next/link";
-import { FaCat } from "react-icons/fa";
+import { FaCat, FaGithub } from "react-icons/fa";
 
 const NavButton = ({ href, path, _target, children, ...props }) => {
   let active = href === path;
@@ -27,8 +27,8 @@ const NavBar = (props) => {
       <NavButton href="/works" path={path}>
         Works
       </NavButton>
-      <NavButton href="/sauce" path={path}>
-        Sauce
+      <NavButton href="https://github.com/hellolol2016/dennis-wang-portfolio" path={path}>
+        Sauce <Box width={"10px"} /><FaGithub />
       </NavButton>
     </HStack>
   );

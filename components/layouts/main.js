@@ -9,7 +9,17 @@ export default function Main({ children, router }) {
     enter: { opacity: 1, x: 0, y: 0 },
     exit: { opacity: 0, x: -0, y: 20 },
   };
-  return (
+  return (<>
+<Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="description" content="Dennis Wang - portfolio" />
+        <meta name="author" content="Dennis Wang" />
+        <link rel="shortcut icon" href="/cat.png" type="image/x-icon" />
+        <meta property="og:site_name" content="Dennis Want - portfolio" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="/cat.png" />
+        <title>Dennis Wang - portfolio</title>
+      </Head>
     <Center style={{ border: "0" }} flexDirection={"column"}>
       <AnimatePresence>
         <Nav path={router?.pathname} />
@@ -27,5 +37,6 @@ export default function Main({ children, router }) {
         <Footer />
       </AnimatePresence>
     </Center>
+</>
   );
 }
