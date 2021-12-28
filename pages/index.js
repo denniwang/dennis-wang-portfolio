@@ -73,7 +73,7 @@ export default function Home() {
               a passion for anything related to web development, tennis, and
               finances. In real life, Dennis can be found studying, working for
               his nonprofit organization, or playing tennis. He currently does
-              not have a job but wouldn't mind working for some startup company
+              not have a job but wouldn&apos;t mind working for some startup company
               ;)
             </Text>
           </VStack>
