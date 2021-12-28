@@ -19,7 +19,7 @@ export default function Main({ children, router }) {
           animate="enter"
           exit="exit"
           variants={variants}
-          transition={{ duration: 0.4, type: "easeInOut" }}
+          transition={{ duration: 1, type: "easeInOut" }}
           style={{ position: "relative" }}
         >
           {children}
