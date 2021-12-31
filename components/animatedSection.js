@@ -14,10 +14,12 @@ export default function AnimatedSection({ title,delay,children, ...rest}) {
       transition={{ duration: 10.8, delay:"0"}}
       
       
-      {...rest}
       className='title'>
        
-      <Center>
+      <Center
+      
+      {...rest}
+      >
         <VStack>
           {children} 
           </VStack>

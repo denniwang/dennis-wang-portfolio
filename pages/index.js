@@ -137,7 +137,7 @@ export default function Home() {
               <FaHeart></FaHeart>
             </Text>
             <Text fontSize={"20"} textAlign={"right"}>
-              Tennis, exercise, graphic design,{" "}
+              Tennis, graphic design,{" "}
               <Link href={"https://www.laughouttogether.org"}>
                 nonprofit work
               </Link>
