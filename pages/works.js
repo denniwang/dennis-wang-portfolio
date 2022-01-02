@@ -31,6 +31,7 @@ export default function works() {
         <WorkCard name="LOT Foundation Website" img="lotweb" link="https://www.laughouttogether.org"></WorkCard>
         <WorkCard name="Anydoro" img="anydoro" link="https://anydoro.netlify.app"></WorkCard>
         <WorkCard name="Beat" img="beat" link="https://beattt.netlify.app/"></WorkCard>
+        <WorkCard name="HolySheet" img="sheet" link="https://holy-sheet.vercel.app"></WorkCard>
         
         
           </SimpleGrid> 
