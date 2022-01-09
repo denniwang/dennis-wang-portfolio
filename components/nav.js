@@ -6,7 +6,16 @@ const NavButton = ({ href, path, _target, children, ...props }) => {
   let active = href === path;
   return (
     <Link href={href} _target={_target}>
-      <Button {...props} bgColor={href==="/"?"transparent":active ? "#f5cb5c" : "#333533"}>
+      <Button
+        {...props}
+        bgColor={href === "/" ? "transparent" : active ? "#f5cb5c" : "#333533"}
+        color={href === path ? "#333533" : ""}
+        _hover={{
+          bg: '#fff3b0',
+          color:"#333533"
+        
+        }}
+      >
         {children}
       </Button>
     </Link>
@@ -16,7 +25,7 @@ const NavButton = ({ href, path, _target, children, ...props }) => {
 const NavBar = (props) => {
   const { path } = props;
   return (
-    <HStack mt={"40px"} mb={"40px" }w={"70%"}>
+    <HStack mt={"40px"} mb={"40px"} w={"70%"}>
       <NavButton href="/" path={path} fontSize={"30px"}>
         Dennis Wang &#160;
         <FaCat />
@@ -27,8 +36,12 @@ const NavBar = (props) => {
       <NavButton href="/works" path={path}>
         Works
       </NavButton>
-      <NavButton href="https://github.com/hellolol2016/dennis-wang-portfolio" path={path}>
-        Sauce <Box width={"10px"} /><FaGithub />
+      <NavButton
+        href="https://github.com/hellolol2016/dennis-wang-portfolio"
+        path={path}
+      >
+        Sauce <Box width={"10px"} />
+        <FaGithub />
       </NavButton>
     </HStack>
   );

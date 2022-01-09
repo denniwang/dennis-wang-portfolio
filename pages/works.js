@@ -12,13 +12,18 @@ import Link from 'next/link';
 
 const WorkCard = ({ name, link, img, ...rest }) => {
   return (
+    <Box
+      _hover={{
+        boxShadow:"rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px" 
+      }}
+    >
     <Link href={link} target="_blank">
     <Box padding={"10px"} borderRadius={"10px"}>
       <img src={`/works/${img}.png`} borderRadius="10px"></img>
       <Text>{name}</Text>
       </Box>
 </Link>
-
+</Box>
   )
 
 }
@@ -27,11 +32,12 @@ export default function works() {
   return (
     <AnimatedSection style={{ backgroundColor :  "transparent", color:"#e8eddf" , width:"80vw"}} >
       <VStack width={"50vw"}> <Text fontSize={"30px"} fontWeight={500}>My works</Text> 
-        <SimpleGrid columns={2} width={"100%"}>
+        <SimpleGrid columns={2} width={"100%"} spacing={3}>
         <WorkCard name="LOT Foundation Website" img="lotweb" link="https://www.laughouttogether.org"></WorkCard>
         <WorkCard name="Anydoro" img="anydoro" link="https://anydoro.netlify.app"></WorkCard>
         <WorkCard name="Beat" img="beat" link="https://beattt.netlify.app/"></WorkCard>
         <WorkCard name="HolySheet" img="sheet" link="https://holy-sheet.vercel.app"></WorkCard>
+        <WorkCard name="SigmaChat" img="sigchat" link="https://sigmachat.vercel.app"></WorkCard>
         
         
           </SimpleGrid> 
