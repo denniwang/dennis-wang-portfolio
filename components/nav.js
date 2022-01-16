@@ -9,7 +9,7 @@ const NavButton = ({ href, path, _target, children, ...props }) => {
       <Button
         {...props}
         bgColor={href === "/" ? "transparent" : active ? "#f5cb5c" : "#333533"}
-        color={href === path ? "#333533" : ""}
+        color={href ==="/"?"#e8eddf": href===path ? "#333533" : "#e8eddf"}
         _hover={{
           bg: '#fff3b0',
           color:"#333533"
