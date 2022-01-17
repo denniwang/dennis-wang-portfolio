@@ -38,6 +38,7 @@ export default function works() {
         <WorkCard name="Beat" img="beat" link="https://beattt.netlify.app/"></WorkCard>
         <WorkCard name="HolySheet" img="sheet" link="https://holy-sheet.vercel.app"></WorkCard>
         <WorkCard name="SigmaChat" img="sigchat" link="https://sigmachat.vercel.app"></WorkCard>
+        <WorkCard name="Lettis" img="lettis" link="https://lettis.vercel.app"></WorkCard>
         
         
           </SimpleGrid> 
