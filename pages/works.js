@@ -40,6 +40,7 @@ export default function works() {
         <WorkCard name="SigmaChat" img="sigchat" link="https://sigmachat.vercel.app"></WorkCard>
         <WorkCard name="Lettis" img="lettis" link="https://lettis.vercel.app"></WorkCard>
         
+        <WorkCard name="ClockTab" img="clock" link="https://clock-tab.netlify.app"></WorkCard>
         
           </SimpleGrid> 
           
