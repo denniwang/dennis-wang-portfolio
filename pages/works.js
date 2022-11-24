@@ -58,6 +58,11 @@ export default function works() {
             link="https://anydoro.netlify.app"
           ></WorkCard>
           <WorkCard
+            name="4K Weeks"
+            img="4kweeks"
+            link="https://4kweeks-mu.vercel.app"
+          ></WorkCard>
+          <WorkCard
             name="Beat"
             img="beat"
             link="https://beattt.netlify.app/"
