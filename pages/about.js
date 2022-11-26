@@ -19,63 +19,59 @@ import {
   FaLinkedin,
 } from "react-icons/fa";
 import Timeslot from "../components/timeslot";
-import AnimeDiv from '../components/animatedSection'
-export default function Page({ }) {
-
+import AnimeDiv from "../components/animatedSection";
+export default function Page({}) {
   return (
     <>
-        <AnimatedSection
+      <AnimatedSection
         style={{ backgroundColor: "transparent", color: "#e8eddf" }}
         delay={0}
       >
         <Center bg={"#242423"} borderRadius="md" m={3}>
-          <Box color={"#e8eddf"} fontSize={"17px"} padding={"3"}>
-            More about me!  
+          <Box
+            color={"#e8eddf"}
+            fontSize={"17px"}
+            padding={"3"}
+            boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
+          >
+            More about me!
           </Box>
         </Center>
 
-        <Center margin={"0 10px"} flexDirection={{ base: "column", md: "row" }}>
+        <Center margin={"0 10px"} flexDirection={{ base: "column", md: "row" }}maxW="500px">
           <Image
-            src="me.png"
-            maxWidth={"200px"}
-            borderRadius={"full"}
+            src="smiley.jpg"
+            maxWidth={"300px"}
+            borderRadius={"20px"}
             border={"3px solid #242423"}
+            boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
+            alt="smiley"
           />
 
           <VStack justify={"flex-start"}>
             <Box ml="5" width={{ base: "100%", xl: "auto" }}>
-              <Text fontSize={"24px"} fontWeight={"bold"}>
-                Dennis Wang
-              </Text>
-              <Text fontSize={"20px"}>Likes to learn new things &#128526;</Text>
-              <Text>(Currently Web Dev)</Text>
+              <Text fontSize={"20px"}>Tyler and I in Los Angeles</Text>
             </Box>
           </VStack>
         </Center>
-
-        <Center
-          width={{ base: "70%", xl: "40%" }}
-          style={{ marginTop: "20px" }}
-        >
-          <VStack align={"end"} justify={"center"}>
-            <Text
-              textDecoration={"underline 4px  #f5cb5c"}
-              className="miniheader"
-            >
-              About
-            </Text>
-            <Text fontSize={"18px"} textAlign={"right"}>
-              Dennis is a high school student in Southern California, US. He has
-              a passion for anything related to web development, tennis, and
-              finances. In real life, Dennis can be found studying, working for
-              his nonprofit organization, or playing tennis. He currently does
-              not have a job but wouldn&apos;t mind working for some startup company
-              ;)
-            </Text>
-          </VStack>
-        </Center>
       </AnimatedSection>
-      <AnimatedSection delay={0.5} width={"100%"}>
+      <AnimatedSection delay={0.5} width={"100%"} marginTop="30px">
+
+        <Center margin={"0 10px"} flexDirection={{ base: "column", md: "row" }} maxW="500px">
+          <VStack justify={"flex-start"}>
+            <Box ml="5" width={{ base: "100%", xl: "auto" }}>
+              <Text fontSize={"20px"} marginRight="20px" >My friends and I at the Homecoming football game</Text>
+            </Box>
+          </VStack>
+          <Image
+            src="friends2.jpg"
+            maxWidth={"400px"}
+            borderRadius={"full"}
+            border={"3px solid #242423"}
+            alt="smiley"
+          />
+
+        </Center>
         <Button
           style={{
             backgroundColor: "#f5cb5c",
@@ -176,7 +172,7 @@ export default function Page({ }) {
             </HStack>
           </VStack>
         </Center>
-      </AnimatedSection> 
- </> 
-  )
+      </AnimatedSection>
+    </>
+  );
 }

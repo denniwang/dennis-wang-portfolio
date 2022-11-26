@@ -15,6 +15,7 @@ const NavButton = ({ href, path, _target, children, ...props }) => {
           color:"#333533"
         
         }}
+        _focus={{color:"none"}}
       >
         {children}
       </Button>

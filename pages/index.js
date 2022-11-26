@@ -26,13 +26,17 @@ import Timeslot from "../components/timeslot";
 export default function Home() {
   return (
     <>
-
       <AnimatedSection
         style={{ backgroundColor: "transparent", color: "#e8eddf" }}
         delay={0}
       >
         <Center bg={"#242423"} borderRadius="md" m={3}>
-          <Box color={"#e8eddf"} fontSize={"17px"} padding={"3"}>
+          <Box
+            color={"#e8eddf"}
+            fontSize={"17px"}
+            padding={"3"}
+            boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
+          >
             Hello, I am a high school student in Southern California, welcome to
             my page!
           </Box>
@@ -40,7 +44,7 @@ export default function Home() {
 
         <Center margin={"0 10px"} flexDirection={{ base: "column", md: "row" }}>
           <Image
-            src="me.png"
+            src="profile.png"
             maxWidth={"200px"}
             borderRadius={"full"}
             border={"3px solid #242423"}
@@ -73,8 +77,8 @@ export default function Home() {
               a passion for anything related to web development, tennis, and
               finances. In real life, Dennis can be found studying, working for
               his nonprofit organization, or playing tennis. He currently does
-              not have a job but wouldn&apos;t mind working for some startup company
-              ;)
+              not have a job but wouldn&apos;t mind working for some startup
+              company ;)
             </Text>
           </VStack>
         </Center>
