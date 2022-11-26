@@ -7,6 +7,6 @@ not sure why you're here but you're welcome anytime. 🙂
 graph LR
 A[me] -- going --> B((omw))
 A --> C(other way)
-B --> D(yup)
+B --> D(win)
 C --> D
 ```
