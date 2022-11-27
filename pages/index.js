@@ -48,6 +48,7 @@ export default function Home() {
             maxWidth={"200px"}
             borderRadius={"full"}
             border={"3px solid #242423"}
+            alt="dennis"
           />
 
           <VStack justify={"flex-start"}>

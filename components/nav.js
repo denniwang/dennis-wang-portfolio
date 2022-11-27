@@ -27,7 +27,7 @@ const NavBar = (props) => {
   const { path } = props;
   return (
     <HStack mt={"40px"} mb={"40px"} w={"70%"}>
-      <NavButton href="/" path={path} fontSize={"30px"}>
+      <NavButton href="/" path={path} fontSize={"23px"}padding="10px" >
         Dennis Wang &#160;
         <FaCat />
       </NavButton>

@@ -20,6 +20,32 @@ import {
 } from "react-icons/fa";
 import Timeslot from "../components/timeslot";
 import AnimeDiv from "../components/animatedSection";
+import { Gallery } from "react-grid-gallery";
+const images = [
+   {
+      src: "https://c2.staticflickr.com/9/8817/28973449265_07e3aa5d2e_b.jpg",
+      width: 320,
+      height: 174,
+      isSelected: true,
+      caption: "After Rain (Jeshu John - designerspics.com)",
+   },
+   {
+      src: "https://c2.staticflickr.com/9/8356/28897120681_3b2c0f43e0_b.jpg",
+      width: 320,
+      height: 212,
+      tags: [
+         { value: "Ocean", title: "Ocean" },
+         { value: "People", title: "People" },
+      ],
+      alt: "Boats (Jeshu John - designerspics.com)",
+   },
+
+   {
+      src: "https://c4.staticflickr.com/9/8887/28897124891_98c4fdd82b_b.jpg",
+      width: 320,
+      height: 212,
+   },
+];
 export default function Page({}) {
   return (
     <>
@@ -28,6 +54,7 @@ export default function Page({}) {
         delay={0}
       >
         <Center bg={"#242423"} borderRadius="md" m={3}>
+        <Gallery images={images} />
           <Box
             color={"#e8eddf"}
             fontSize={"17px"}
