@@ -57,7 +57,7 @@ export default function Home() {
                 Dennis Wang
               </Text>
               <Text fontSize={"20px"}>Likes to learn new things &#128526;</Text>
-              <Text>(Currently Web Dev)</Text>
+              <Text>(Currently kendo)</Text>
             </Box>
           </VStack>
         </Center>
@@ -76,10 +76,8 @@ export default function Home() {
             <Text fontSize={"18px"} textAlign={"right"}>
               Dennis is a high school student in Southern California, US. He has
               a passion for anything related to web development, tennis, and
-              finances. In real life, Dennis can be found studying, working for
-              his nonprofit organization, or playing tennis. He currently does
-              not have a job but wouldn&apos;t mind working for some startup
-              company ;)
+              entrepreneurship. In real life, Dennis can be found trying out new sports, working for
+              his nonprofit organization, or playing tennis. He currently works as a tennis coach and coordinator for Veylix Tennis Academy in Irvine
             </Text>
           </VStack>
         </Center>
@@ -120,11 +118,10 @@ export default function Home() {
             <Timeslot year={"2016"}>
               Built a computer for the first time
             </Timeslot>
-            <Timeslot year={"2019 - present"}>
-              {" "}
-              First year of High School. Got interested in typing lines to tell
-              a computer to do stuff
-            </Timeslot>
+            <Timeslot year={"2019"}>
+              First year of high school             </Timeslot>
+            <Timeslot year={"2020"}>
+              Founded the Laugh Out Together Foundation             </Timeslot>
           </VStack>
         </Center>
 
@@ -151,40 +148,6 @@ export default function Home() {
           </VStack>
         </Center>
 
-        <Center
-          width={{ base: "70%", xl: "80%" }}
-          style={{ marginTop: "50px", marginBottom: "100px" }}
-        >
-          <VStack
-            align={"end"}
-            justify={"center"}
-            width={"100%"}
-            fontSize={"20px"}
-          >
-            <Text
-              textDecoration={"underline 4px #f5cb5c"}
-              className="miniheader"
-              marginBottom={"4"}
-            >
-              @
-            </Text>
-
-            <HStack>
-              <Text>hellolol2016</Text>
-
-              <FaGithub />
-            </HStack>
-
-            <HStack>
-              <Text>@wennis_dang</Text>
-              <FaInstagram />
-            </HStack>
-            <HStack>
-              <Text>denniswang812</Text>
-              <FaLinkedin />
-            </HStack>
-          </VStack>
-        </Center>
       </AnimatedSection>
     </>
   );
