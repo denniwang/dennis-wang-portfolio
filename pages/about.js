@@ -123,57 +123,6 @@ export default function Page({}) {
           </Link>
         </Button>
 
-        <Center
-          width={{ base: "70%", xl: "80%" }}
-          style={{ marginTop: "20px" }}
-        >
-          <VStack align={"end"} justify={"center"}>
-            <Text
-              textDecoration={"underline 4px #f5cb5c"}
-              className="miniheader"
-              marginBottom={"4"}
-            >
-              Bio
-            </Text>
-
-            <Timeslot year={"2005"}>Born in Wuhan, China</Timeslot>
-
-            <Timeslot year={"2012"}>Moved to the United States</Timeslot>
-
-            <Timeslot year={"2016"}>
-              Built a computer for the first time
-            </Timeslot>
-            <Timeslot year={"2019 - present"}>
-              {" "}
-              First year of High School. Got interested in typing lines to tell
-              a computer to do stuff
-            </Timeslot>
-          </VStack>
-        </Center>
-
-        <Center
-          width={{ base: "70%", xl: "80%" }}
-          style={{ marginTop: "40px" }}
-        >
-          <VStack align={"end"} justify={"center"}>
-            <Text
-              textDecoration={"underline 4px #f5cb5c"}
-              color={"#f5cb5c"}
-              className="miniheader"
-              marginBottom={"4"}
-            >
-              <FaHeart></FaHeart>
-            </Text>
-            <Text fontSize={"20"} textAlign={"right"}>
-              Tennis, graphic design,{" "}
-              <Link href={"https://www.laughouttogether.org"}>
-                nonprofit work
-              </Link>
-              , leadership, kendo, skiing, you
-            </Text>
-          </VStack>
-        </Center>
-
       </AnimatedSection>
     </>
   );

@@ -30,7 +30,15 @@ export default function Home() {
         style={{ backgroundColor: "transparent", color: "#e8eddf" }}
         delay={0}
       >
-        <Center bg={"#242423"} borderRadius="md" m={3}>
+        <Center
+          bg={"#242423"}
+          borderRadius="md"
+          m={3}
+          width={{ base: "60%", xl: "40%" }}
+          style={{ marginTop: "20px" }}
+          minWidth="500px"
+          maxW="750px"
+        >
           <Box
             color={"#e8eddf"}
             fontSize={"17px"}
@@ -42,7 +50,7 @@ export default function Home() {
           </Box>
         </Center>
 
-        <Center margin={"0 10px"} flexDirection={{ base: "column", md: "row" }}>
+        <Center flexDirection={{ base: "column", md: "row" }}>
           <Image
             src="profile.png"
             maxWidth={"200px"}
@@ -63,21 +71,25 @@ export default function Home() {
         </Center>
 
         <Center
-          width={{ base: "70%", xl: "40%" }}
+          width={{ base: "60%", xl: "40%" }}
           style={{ marginTop: "20px" }}
+          minWidth="500px"
+          maxWidth="750px"
         >
-          <VStack align={"end"} justify={"center"}>
+          <VStack align={"start"} justify={"center"}>
             <Text
               textDecoration={"underline 4px  #f5cb5c"}
               className="miniheader"
             >
               About
             </Text>
-            <Text fontSize={"18px"} textAlign={"right"}>
+            <Text fontSize={"18px"} textAlign={"left"}>
               Dennis is a high school student in Southern California, US. He has
               a passion for anything related to web development, tennis, and
-              entrepreneurship. In real life, Dennis can be found trying out new sports, working for
-              his nonprofit organization, or playing tennis. He currently works as a tennis coach and coordinator for Veylix Tennis Academy in Irvine
+              entrepreneurship. In real life, Dennis can be found trying out new
+              sports, working for his nonprofit organization, or playing tennis.
+              He currently works as a tennis coach and coordinator for Veylix
+              Tennis Academy in Irvine
             </Text>
           </VStack>
         </Center>
@@ -99,10 +111,16 @@ export default function Home() {
         </Button>
 
         <Center
-          width={{ base: "70%", xl: "80%" }}
+          width={{ base: "60%", xl: "40%" }}
           style={{ marginTop: "20px" }}
+          minWidth="500px"
         >
-          <VStack align={"end"} justify={"center"}>
+          <VStack align={"start"} justify={"center"}
+          
+          width={{ base: "60%", xl: "40%" }}
+          style={{ marginTop: "20px" }}
+          minWidth="500px"
+          >
             <Text
               textDecoration={"underline 4px #f5cb5c"}
               className="miniheader"
@@ -118,10 +136,10 @@ export default function Home() {
             <Timeslot year={"2016"}>
               Built a computer for the first time
             </Timeslot>
-            <Timeslot year={"2019"}>
-              First year of high school             </Timeslot>
+            <Timeslot year={"2019"}>First year of high school </Timeslot>
             <Timeslot year={"2020"}>
-              Founded the Laugh Out Together Foundation             </Timeslot>
+              Founded the Laugh Out Together Foundation{" "}
+            </Timeslot>
           </VStack>
         </Center>
 
@@ -129,7 +147,7 @@ export default function Home() {
           width={{ base: "70%", xl: "80%" }}
           style={{ marginTop: "40px" }}
         >
-          <VStack align={"end"} justify={"center"}>
+          <VStack align={"start"} justify={"center"}>
             <Text
               textDecoration={"underline 4px #f5cb5c"}
               color={"#f5cb5c"}
@@ -138,7 +156,7 @@ export default function Home() {
             >
               <FaHeart></FaHeart>
             </Text>
-            <Text fontSize={"20"} textAlign={"right"}>
+            <Text fontSize={"20"} textAlign={"left"}>
               Tennis, graphic design,{" "}
               <Link href={"https://www.laughouttogether.org"}>
                 nonprofit work
@@ -147,7 +165,6 @@ export default function Home() {
             </Text>
           </VStack>
         </Center>
-
       </AnimatedSection>
     </>
   );
