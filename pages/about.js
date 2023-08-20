@@ -3,20 +3,14 @@ import {
   Box,
   Button,
   Center,
-  HStack,
+  Flex,
   Image,
   Text,
-  textDecoration,
   VStack,
 } from "@chakra-ui/react";
 import Link from "next/link";
 import {
   FaArrowRight,
-  FaDiscord,
-  FaGithub,
-  FaHeart,
-  FaInstagram,
-  FaLinkedin,
 } from "react-icons/fa";
 import Footer from "../components/footer"
 import Timeslot from "../components/timeslot";
@@ -72,7 +66,7 @@ export default function Page({}) {
           maxW="500px"
         >
           <Image
-            src="smiley.jpg"
+            src="beach-friends.jpg"
             maxWidth={"300px"}
             borderRadius={"20px"}
             border={"3px solid #242423"}
@@ -82,7 +76,7 @@ export default function Page({}) {
 
           <VStack justify={"flex-start"}>
             <Box ml="5" width={{ base: "100%", xl: "auto" }}>
-              <Text fontSize={"20px"}>Tyler and I in Los Angeles</Text>
+              <Text fontSize={"20px"}>Goodbye beach hangout with friends</Text>
             </Box>
           </VStack>
         </Center>
@@ -96,12 +90,12 @@ export default function Page({}) {
           <VStack justify={"flex-start"}>
             <Box ml="5" width={{ base: "100%", xl: "auto" }}>
               <Text fontSize={"20px"} marginRight="20px">
-                My friends and I at the Homecoming football game
+                Graduation!
               </Text>
             </Box>
           </VStack>
           <Image
-            src="friends2.jpg"
+            src="graduation.jpg"
             maxWidth={"400px"}
             borderRadius={"full"}
             border={"3px solid #242423"}
@@ -116,10 +110,10 @@ export default function Page({}) {
           }}
         >
           <Link href="/works">
-            <>
+            <Flex flex={"row"} justify={"center"} align={"center"}>
               My works <Box width={"10px"}></Box>
               <FaArrowRight />
-            </>
+            </Flex>
           </Link>
         </Button>
 

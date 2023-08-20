@@ -8,14 +8,13 @@ const NavButton = ({ href, path, _target, children, ...props }) => {
     <Link href={href} _target={_target}>
       <Button
         {...props}
-        bgColor={href === "/" ? "transparent" : active ? "#f5cb5c" : "#333533"}
-        color={href ==="/"?"#e8eddf": href===path ? "#333533" : "#e8eddf"}
+              bgColor={href === '/' ? 'transparent' : active ? '#f5cb5c' : 'transparent'}
+        color={href === '/' ? '#e8eddf' : href === path ? '#333533' : '#e8eddf'}
         _hover={{
-          bg: '#fff3b0',
-          color:"#333533"
-        
+          bg: href === '/' ? '#e8eddf' : '#fff3b0', // Adjust background color on hover
+          color: href === '/' ? '#333533' : '#333533', // Adjust text color on hover
         }}
-        _focus={{color:"none"}}
+        _focus={{ boxShadow: 'none' }} // Remove focus box
       >
         {children}
       </Button>
@@ -26,7 +25,11 @@ const NavButton = ({ href, path, _target, children, ...props }) => {
 const NavBar = (props) => {
   const { path } = props;
   return (
-    <HStack mt={"40px"} mb={"40px"} w={"70%"}>
+      <HStack
+      mt={{ base: '20px', md: '40px' }} // Adjust margin top for different screen sizes
+      mb={{ base: '20px', md: '40px' }} // Adjust margin bottom for different screen sizes
+      w={{ base: '100%', md: '70%' }} // Adjust width for different screen sizes
+    >
       <NavButton href="/" path={path} fontSize={"23px"}padding="10px" >
         Dennis Wang &#160;
         <FaCat />

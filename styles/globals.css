@@ -6,12 +6,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-    background-color: #333533;
+    background-color: #1d1c1c !important;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+  transition: color 0.3s, border-color 0.3s; 
 }
 
 * {
@@ -23,3 +24,8 @@ a {
 
 
 h1{margin-bottom:0!important}
+
+a:hover {
+  color: #f5cb5c; /* Change link color to yellow on hover */
+  border-bottom: 2px solid #f5cb5c; /* Add yellow underline on hover */
+}

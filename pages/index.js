@@ -6,6 +6,7 @@ import {
   Box,
   Button,
   Center,
+  Flex,
   HStack,
   Image,
   Text,
@@ -65,7 +66,6 @@ export default function Home() {
                 Dennis Wang
               </Text>
               <Text fontSize={"20px"}>Likes to learn new things &#128526;</Text>
-              <Text>(Currently kendo)</Text>
             </Box>
           </VStack>
         </Center>
@@ -84,12 +84,20 @@ export default function Home() {
               About
             </Text>
             <Text fontSize={"18px"} textAlign={"left"}>
-              Dennis is a high school student in Southern California, US. He has
-              a passion for anything related to web development, tennis, and
-              entrepreneurship. In real life, Dennis can be found trying out new
-              sports, working for his nonprofit organization, or playing tennis.
-              He currently works as a tennis coach and coordinator for Veylix
-              Tennis Academy in Irvine
+              Dennis is studying Computer Science + Business at Northeastern
+              University. He has a passion for technology&apos;s role in
+              education as well as the dynamicism of entrepreneurship. When
+              offline, Dennis loves to coach / play tennis. He is currently
+              studying abroad in Northeastern&apos;s London campus. He uploads
+              content about his life and interests on his{" "}
+              <a
+                href="https://www.youtube.com/channel/UC33Fd7TYX5tzYCTYbBNmOhw"
+                target="_blank"
+                rel="noreferrer"
+              >
+                YouTube Channel
+              </a>
+              .
             </Text>
           </VStack>
         </Center>
@@ -103,10 +111,10 @@ export default function Home() {
           }}
         >
           <Link href="/works">
-            <>
+            <Flex flex={"row"} justify={"center"} align={"center"}>
               My works <Box width={"10px"}></Box>
               <FaArrowRight />
-            </>
+            </Flex>
           </Link>
         </Button>
 
@@ -115,11 +123,12 @@ export default function Home() {
           style={{ marginTop: "20px" }}
           minWidth="500px"
         >
-          <VStack align={"start"} justify={"center"}
-          
-          width={{ base: "60%", xl: "40%" }}
-          style={{ marginTop: "20px" }}
-          minWidth="500px"
+          <VStack
+            align={"start"}
+            justify={"center"}
+            width={{ base: "60%", xl: "40%" }}
+            style={{ marginTop: "20px" }}
+            minWidth="500px"
           >
             <Text
               textDecoration={"underline 4px #f5cb5c"}
@@ -136,9 +145,11 @@ export default function Home() {
             <Timeslot year={"2016"}>
               Built a computer for the first time
             </Timeslot>
-            <Timeslot year={"2019"}>First year of high school </Timeslot>
             <Timeslot year={"2020"}>
               Founded the Laugh Out Together Foundation{" "}
+            </Timeslot>
+            <Timeslot year={"2023"}>
+              Started studying at Northeastern University
             </Timeslot>
           </VStack>
         </Center>

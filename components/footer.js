@@ -5,13 +5,12 @@ export default function Page({}) {
   return (
     <Center mb="30px">
       <VStack
-        width={{ base: "60%", xl: "40%" }}
-        style={{ marginTop: "20px" }}
-        minWidth="500px"
-        maxW="750px"
-        align={"start"}
-        justify={"center"}
-        fontSize={"20px"}
+      width={{ base: '100%', md: '60%', xl: '40%' }} // Adjust width for different screen sizes
+      marginTop={{ base: '10px', md: '20px' }} // Adjust margin for different screen sizes
+      align={{ base: 'center', md: 'start' }} // Center items on small screens, align to start on medium and larger screens
+      justify="center"
+      fontSize={{ base: '16px', md: '20px' }} // Adjust font size for different screen sizes
+      maxW="750px"
       >
         <Text
           textDecoration={"underline 4px #f5cb5c"}
@@ -36,7 +35,7 @@ export default function Page({}) {
           <Text>denniswang812</Text>
         </HStack>
         <HStack
-          fontSize={"16px"}
+          fontSize={"14px"}
           alignContent={"center"}
           alignSelf="center"
           pt="30px"
