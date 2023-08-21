@@ -3,9 +3,9 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 export default function Page({}) {
   return (
-    <Center mb="30px">
+    <Center mb="30px" width={"100%"}>
       <VStack
-      width={{ base: '100%', md: '60%', xl: '40%' }} // Adjust width for different screen sizes
+      width={{ base: '80%', md: '40%', xl: '26%' }} // Adjust width for different screen sizes
       marginTop={{ base: '10px', md: '20px' }} // Adjust margin for different screen sizes
       align={{ base: 'center', md: 'start' }} // Center items on small screens, align to start on medium and larger screens
       justify="center"

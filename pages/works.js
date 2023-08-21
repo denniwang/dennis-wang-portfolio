@@ -24,7 +24,7 @@ const WorkCard = ({ name, link, img, extra, ...rest }) => {
     >
       <Link href={link} target="_blank">
         <Box padding={"10px"} borderRadius={"10px"}>
-          <img src={`/works/${img}.png`} borderRadius="10px"></img>
+          <img src={`/works/${img}.png`} className="work-img"></img>
           <Text color={ extra?"#333533":"#e8eddf"}>{name}</Text>
         </Box>
       </Link>
@@ -38,15 +38,14 @@ export default function works() {
       style={{
         backgroundColor: "transparent",
         color: "#e8eddf",
-        width: "80vw",
       }}
     >
-      <VStack width={"50vw"}>
+      <VStack width={{ base:"80vw",md:"50vw"}}>
         {" "}
         <Text fontSize={"30px"} fontWeight={500}>
           My works
         </Text>
-        <SimpleGrid columns={2} width={"100%"} spacing={3}>
+        <SimpleGrid columns={{base:1, md:2}} width={"100%"} spacing={3}>
           <WorkCard
             name="LOT Foundation Website"
             img="lotweb"

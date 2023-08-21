@@ -37,7 +37,7 @@ export default function Home() {
           m={3}
           width={{ base: "60%", xl: "40%" }}
           style={{ marginTop: "20px" }}
-          minWidth="500px"
+          minWidth="300px"
           maxW="750px"
         >
           <Box
@@ -46,7 +46,7 @@ export default function Home() {
             padding={"3"}
             boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
           >
-            Hello, I am a high school student in Southern California, welcome to
+            Hello, I am a college student studying abroad in London, welcome to
             my page!
           </Box>
         </Center>
@@ -76,14 +76,18 @@ export default function Home() {
           minWidth="500px"
           maxWidth="750px"
         >
-          <VStack align={"start"} justify={"center"}>
+          <VStack align={"start"} justify={"center"}
+            width={{ base: "60%", xl: "100%" }}
+            minWidth="300px"
+          >
             <Text
               textDecoration={"underline 4px  #f5cb5c"}
               className="miniheader"
             >
               About
             </Text>
-            <Text fontSize={"18px"} textAlign={"left"}>
+            <Text fontSize={{base:"12px",xl:"16px"}} textAlign={"left"}>
+            
               Dennis is studying Computer Science + Business at Northeastern
               University. He has a passion for technology&apos;s role in
               education as well as the dynamicism of entrepreneurship. When
@@ -126,9 +130,9 @@ export default function Home() {
           <VStack
             align={"start"}
             justify={"center"}
-            width={{ base: "60%", xl: "40%" }}
+            width={{ base: "60%", xl: "100%" }}
+            minWidth="300px"
             style={{ marginTop: "20px" }}
-            minWidth="500px"
           >
             <Text
               textDecoration={"underline 4px #f5cb5c"}
@@ -158,7 +162,12 @@ export default function Home() {
           width={{ base: "70%", xl: "80%" }}
           style={{ marginTop: "40px" }}
         >
-          <VStack align={"start"} justify={"center"}>
+          <VStack
+            align={"start"}
+            justify={"center"}
+            width={{ base: "60%", xl: "100%" }}
+            minWidth="300px"
+          >
             <Text
               textDecoration={"underline 4px #f5cb5c"}
               color={"#f5cb5c"}

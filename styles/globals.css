@@ -29,3 +29,6 @@ a:hover {
   color: #f5cb5c; /* Change link color to yellow on hover */
   border-bottom: 2px solid #f5cb5c; /* Add yellow underline on hover */
 }
+.work-img{
+  border-radius: 10px;
+}
