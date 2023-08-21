@@ -46,7 +46,7 @@ const NavBar = (props) => {
         path={path}
       >
         Source <Box width={"10px"} />
-        <FaGithub  fontSize={"40px"}/>
+        <FaGithub  fontSize={"30px"}/>
       </NavButton>
     </HStack>
   );

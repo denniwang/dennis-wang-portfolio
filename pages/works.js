@@ -90,8 +90,8 @@ export default function works() {
           <WorkCard
             extra={true}
             name="EquilibriNews"
-            img="news"
-            link="https://eqnews.herokuapp.com"
+            img="new"
+            link="https://equilibri-news.vercel.app"
           ></WorkCard>
         </SimpleGrid>
       </VStack>
