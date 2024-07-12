@@ -32,7 +32,20 @@ const WorkCard = ({ name, link, img, extra, ...rest }) => {
   );
 };
 
-export default function works() {
+const works = [
+  { name: "EquilibriNews", img: "new", link: "https://equilibri-news.vercel.app",extra:true },
+  { name: "teXnology", img: "tex", link: "https://github.com/hellolol2016/teXnology",extra:true },
+  { name: "LOT Foundation Website", img: "lotweb", link: "https://www.laughouttogether.org",extra:false },
+  { name: "Anydoro", img: "anydoro", link: "https://anydoro.netlify.app",extra:false },
+  { name: "4K Weeks", img: "4kweeks", link: "https://4kweeks-mu.vercel.app",extra:false },
+  { name: "Beat", img: "beat", link: "https://beattt.netlify.app/",extra:false },
+  { name: "HolySheet", img: "sheet", link: "https://holy-sheet.vercel.app",extra:false },
+  { name: "SigmaChat", img: "sigchat", link: "https://sigmachat.vercel.app",extra:false },
+  { name: "Lettis", img: "lettis", link: "https://lettis.vercel.app",extra:false },
+  { name: "ClockTab", img: "clock", link: "https://clock-tab.netlify.app",extra:false },
+]
+
+export default function WorksPage() {
   return (
     <AnimatedSection
       style={{
@@ -46,53 +59,9 @@ export default function works() {
           My works
         </Text>
         <SimpleGrid columns={{base:1, md:2}} width={"100%"} spacing={3}>
-          <WorkCard
-            name="LOT Foundation Website"
-            img="lotweb"
-            link="https://www.laughouttogether.org"
-          ></WorkCard>
-          <WorkCard
-            name="Anydoro"
-            img="anydoro"
-            link="https://anydoro.netlify.app"
-          ></WorkCard>
-          <WorkCard
-            name="4K Weeks"
-            img="4kweeks"
-            link="https://4kweeks-mu.vercel.app"
-          ></WorkCard>
-          <WorkCard
-            name="Beat"
-            img="beat"
-            link="https://beattt.netlify.app/"
-          ></WorkCard>
-          <WorkCard
-            name="HolySheet"
-            img="sheet"
-            link="https://holy-sheet.vercel.app"
-          ></WorkCard>
-          <WorkCard
-            name="SigmaChat"
-            img="sigchat"
-            link="https://sigmachat.vercel.app"
-          ></WorkCard>
-          <WorkCard
-            name="Lettis"
-            img="lettis"
-            link="https://lettis.vercel.app"
-          ></WorkCard>
-
-          <WorkCard
-            name="ClockTab"
-            img="clock"
-            link="https://clock-tab.netlify.app"
-          ></WorkCard>
-          <WorkCard
-            extra={true}
-            name="EquilibriNews"
-            img="new"
-            link="https://equilibri-news.vercel.app"
-          ></WorkCard>
+          {works.map((work) => (
+            <WorkCard {...work} key={work.name} />
+          ))}
         </SimpleGrid>
       </VStack>
     </AnimatedSection>
