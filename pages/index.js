@@ -46,8 +46,8 @@ export default function Home() {
             padding={"3"}
             boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
           >
-            Hello, I am a college student studying abroad in London, welcome to
-            my page!
+            Hello, I am a 2nd year CS + Business major at Northeastern
+            University, welcome to my page!
           </Box>
         </Center>
 
@@ -76,7 +76,9 @@ export default function Home() {
           minWidth="500px"
           maxWidth="750px"
         >
-          <VStack align={"start"} justify={"center"}
+          <VStack
+            align={"start"}
+            justify={"center"}
             width={{ base: "60%", xl: "100%" }}
             minWidth="300px"
           >
@@ -86,8 +88,7 @@ export default function Home() {
             >
               About
             </Text>
-            <Text fontSize={{base:"12px",xl:"16px"}} textAlign={"left"}>
-            
+            <Text fontSize={{ base: "12px", xl: "16px" }} textAlign={"left"}>
               Dennis is studying Computer Science + Business at Northeastern
               University. He has a passion for technology&apos;s role in
               education as well as the dynamicism of entrepreneurship. When

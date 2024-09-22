@@ -44,40 +44,18 @@ const images = [
 export default function Page({}) {
   return (
     <>
+
+          <iframe src="/resume.pdf" width={'700vw'} height={'950vh'} border='none'></iframe>
       <AnimatedSection
         style={{ backgroundColor: "transparent", color: "#e8eddf" }}
         delay={0}
       >
-        <Center bg={"#242423"} borderRadius="md" m={3}>
-          <Gallery images={images} />
-          <Box
-            color={"#e8eddf"}
-            fontSize={"17px"}
-            padding={"3"}
-            boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
-          >
-            More about me!
-          </Box>
-        </Center>
-
         <Center
           margin={"0 10px"}
           flexDirection={{ base: "column", md: "row" }}
           maxW="500px"
         >
-          <Image
-            src="beach-friends.jpg"
-            maxWidth={"300px"}
-            borderRadius={"20px"}
-            border={"3px solid #242423"}
-            boxShadow={"rgba(0, 0, 0, 0.24) 0px 3px 8px"}
-            alt="smiley"
-          />
-
           <VStack justify={"flex-start"}>
-            <Box ml="5" width={{ base: "100%", xl: "auto" }}>
-              <Text fontSize={"20px"}>Goodbye beach hangout with friends</Text>
-            </Box>
           </VStack>
         </Center>
       </AnimatedSection>

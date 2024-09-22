@@ -33,7 +33,7 @@ const NavBar = (props) => {
       w={{ base: '90%', md: '70%' }} // Adjust width for different screen sizes
     >
       <NavButton href="/" path={path} fontSize={{ base: "16px", md: "23px" }} padding={{ base:"15px",md:"10px"}} >
-        Dennis Wang &#160;
+        Dennis Wang 
       </NavButton>
       <NavButton href="/about" path={path}>
         About
