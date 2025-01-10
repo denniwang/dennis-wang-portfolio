@@ -42,7 +42,7 @@ const NavBar = (props) => {
         Works
       </NavButton>
       <NavButton
-        href="https://github.com/hellolol2016/dennis-wang-portfolio"
+        href="https://github.com/denniwang/dennis-wang-portfolio"
         path={path}
       >
         Source <Box width={"10px"} />
