@@ -22,7 +22,7 @@ export default function Page({}) {
 
         <HStack>
           <FaGithub />
-          <Text>hellolol2016</Text>
+          <Text>denniwang</Text>
 
         </HStack>
 

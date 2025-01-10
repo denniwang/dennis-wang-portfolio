@@ -34,7 +34,7 @@ const WorkCard = ({ name, link, img, extra, ...rest }) => {
 
 const works = [
   { name: "EquilibriNews", img: "new", link: "https://equilibri-news.vercel.app",extra:true },
-  { name: "teXnology", img: "tex", link: "https://github.com/hellolol2016/teXnology",extra:true },
+  { name: "teXnology", img: "tex", link: "https://github.com/denniwang/teXnology",extra:true },
   { name: "LOT Foundation Website", img: "lotweb", link: "https://www.laughouttogether.org",extra:false },
   { name: "Anydoro", img: "anydoro", link: "https://anydoro.netlify.app",extra:false },
   { name: "4K Weeks", img: "4kweeks", link: "https://4kweeks-mu.vercel.app",extra:false },
