@@ -89,20 +89,11 @@ export default function Home() {
               About
             </Text>
             <Text fontSize={{ base: "12px", xl: "16px" }} textAlign={"left"}>
-              Dennis is studying Computer Science + Business at Northeastern
-              University. He has a passion for technology&apos;s role in
-              education as well as the dynamicism of entrepreneurship. When
-              offline, Dennis loves to coach / play tennis. He is currently
-              studying abroad in Northeastern&apos;s London campus. He uploads
-              content about his life and interests on his{" "}
-              <a
-                href="https://www.youtube.com/channel/UC33Fd7TYX5tzYCTYbBNmOhw"
-                target="_blank"
-                rel="noreferrer"
-              >
-                YouTube Channel
-              </a>
-              .
+              Hi! My name is Dennis Wang, and I am a 2nd year CS + Business
+              major at Northeastern University. I am passionate about building
+              impactful software. I love to learn new things and explore
+              different fields. In my free time, I enjoy playing tennis,
+              hackathons, and working on personal projects.
             </Text>
           </VStack>
         </Center>
@@ -178,11 +169,11 @@ export default function Home() {
               <FaHeart></FaHeart>
             </Text>
             <Text fontSize={"20"} textAlign={"left"}>
-              Tennis, graphic design,{" "}
+              Tennis,{" "}
               <Link href={"https://www.laughouttogether.org"}>
                 nonprofit work
               </Link>
-              , leadership, learning, reading, you
+              , leadership, learning, reading, skiing 
             </Text>
           </VStack>
         </Center>

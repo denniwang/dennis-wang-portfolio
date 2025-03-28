@@ -33,13 +33,14 @@ const WorkCard = ({ name, link, img, extra, ...rest }) => {
 };
 
 const works = [
-  { name: "EquilibriNews", img: "new", link: "https://equilibri-news.vercel.app",extra:true },
-  { name: "teXnology", img: "tex", link: "https://github.com/denniwang/teXnology",extra:true },
+  { name: "GraduateNU", img: "graduate", link: "https://graduatenu.com/",extra:true },
+  { name: "Atoma Media", img: "atoma", link: "https://www.joinatoma.com/",extra:true },
+  { name: "EquilibriNews", img: "new", link: "https://equilibri-news.vercel.app",extra:false },
+  { name: "teXnology", img: "tex", link: "https://github.com/denniwang/teXnology",extra:false },
   { name: "LOT Foundation Website", img: "lotweb", link: "https://www.laughouttogether.org",extra:false },
   { name: "Anydoro", img: "anydoro", link: "https://anydoro.netlify.app",extra:false },
   { name: "4K Weeks", img: "4kweeks", link: "https://4kweeks-mu.vercel.app",extra:false },
   { name: "Beat", img: "beat", link: "https://beattt.netlify.app/",extra:false },
-  { name: "HolySheet", img: "sheet", link: "https://holy-sheet.vercel.app",extra:false },
   { name: "SigmaChat", img: "sigchat", link: "https://sigmachat.vercel.app",extra:false },
   { name: "Lettis", img: "lettis", link: "https://lettis.vercel.app",extra:false },
   { name: "ClockTab", img: "clock", link: "https://clock-tab.netlify.app",extra:false },
