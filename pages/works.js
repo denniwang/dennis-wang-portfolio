@@ -36,7 +36,7 @@ const works = [
   { name: "GraduateNU", img: "graduate", link: "https://graduatenu.com/",extra:true },
   { name: "Atoma Media", img: "atoma", link: "https://www.joinatoma.com/",extra:true },
   { name: "EquilibriNews", img: "new", link: "https://equilibri-news.vercel.app",extra:false },
-  { name: "teXnology", img: "tex", link: "https://github.com/denniwang/teXnology",extra:false },
+  { name: "teXnology", img: "texnology", link: "https://github.com/denniwang/teXnology",extra:false },
   { name: "LOT Foundation Website", img: "lotweb", link: "https://www.laughouttogether.org",extra:false },
   { name: "Anydoro", img: "anydoro", link: "https://anydoro.netlify.app",extra:false },
   { name: "4K Weeks", img: "4kweeks", link: "https://4kweeks-mu.vercel.app",extra:false },
